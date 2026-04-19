@@ -1,19 +1,19 @@
 ---
 name: template-skill
-description: Krótki opis co ten skill robi.
+description: Short description of what this skill does.
 ---
 
 # 🛠️ Template Skill
 
-Opisz tutaj główne zasady działania skilla.
+Describe the main operating principles of the skill here.
 
 ## 🤖 Automation Scripts
-- **`script.py`**: Opis działania.
+- **`script.py`**: Description of operation.
     - *Usage*: `./path/to/script.py`
 
 ## 🛠️ Working Procedure
 ### Step 1: Research
-Opisz co należy sprawdzić przed działaniem.
+Describe what should be checked before starting.
 
 ### Step 2: Execution
-Opisz jak wykonać zadanie.
+Describe how to perform the task.

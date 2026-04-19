@@ -37,26 +37,28 @@ The following scripts are available within the skill directory to automate commo
 
 ## 🧪 Quality Assurance & Validation Protocol
 
-Każdy egzamin przed synchronizacją musi przejść przez trzystopniowy proces weryfikacji:
+Every exam must pass through a three-stage verification process before synchronization:
 
-### 1. Weryfikacja Merytoryczna i Dydaktyczna
-- **Zgodność z CEFR**: Czy słownictwo i struktury gramatyczne odpowiadają zadeklarowanemu poziomowi (np. A2)?
-- **Atrakcyjność Dystraktorów**: Błędne odpowiedzi nie mogą być "absurdalne". Muszą bazować na typowych błędach uczniów (np. kalki z języka ojczystego, błędna pisownia regularna dla czasowników nieregularnych).
-- **Stopień trudności**: Należy unikać zbyt oczywistych odpowiedzi. Dystraktory powinny zmuszać do analizy kontekstu lub subtelnych różnic gramatycznych.
+### 1. Substantive and Educational Verification
+- **CEFR Compliance**: Do the vocabulary and grammatical structures match the declared level (e.g., A2)?
+- **Distractor Quality**: Incorrect answers must not be "absurd." They should be based on typical student errors (e.g., L1 interference, incorrect regular spelling for irregular verbs).
+- **Difficulty Level**: Avoid overly obvious answers. Distractors should force analysis of context or subtle grammatical differences.
 
-### 2. Weryfikacja Logiczna i Językowa
-- **Jednoznaczność (Unambiguity)**: Czy istnieje tylko jedna poprawna odpowiedź? Należy wyeliminować sytuacje, w których dwa różne słowa pasują do tej samej luki w sposób równie poprawny.
-- **Naturalność (Flow)**: Czy teksty/dialogi brzmią naturalnie? Należy unikać "sztucznych" zdań podręcznikowych na rzecz autentycznych kontekstów komunikacyjnych.
-- **Formatowanie**: Teksty w zadaniach z lukami muszą być czytelne (użycie `\n` dla dialogów).
+### 2. Logical and Linguistic Verification
+- **Unambiguity**: Is there only one correct answer? Eliminate situations where two different words fit the same gap equally well.
+- **Naturalness (Flow)**: Do the texts/dialogues sound natural? Avoid "artificial" textbook sentences in favor of authentic communicative contexts.
+- **Formatting**: Text in gap-fill tasks must be readable (use `\n` for dialogues).
 
-### 3. Walidacja Techniczna (Pre-flight)
-- **ID Sync**: Pełna spójność między `interactions`, `text` (luki `{{id}}`) oraz `expected_answers`.
-- **Typy Interakcji**: Ścisła zgodność z najnowszą wersją specyfikacji (v0.4).
+### 3. Technical Validation (Pre-flight)
+- **ID Sync**: Full consistency between `interactions`, `text` (gap markers `{{id}}`), and `expected_answers`.
+- **Interaction Types**: Strict compliance with the latest specification version (v0.4).
 
 ## 🛠️ Working Procedure
 
 ### Step 1: Search and Fetch
-... (existing content)
+Before creating or updating, check if the exam already exists or find related templates.
+- **Script**: `./.gemini/skills/linguoflow-exam-management/scripts/list-exams.py "pattern"`
+- **Fetch Detail**: `curl -H "x-api-key: $LINGUOFLOW_API_KEY" http://localhost:3000/api/exams/{id} > local-file.json`
 
 ### Step 2: Educational Design & Draft
 Create the JSON based on the blueprint and previous exams. Ensure:

@@ -1,29 +1,29 @@
 # 🌊 LinguoFlow Skills Hub
 
-Centralne repozytorium skilli i skryptów automatyzacji dla ekosystemu LinguoFlow.
+Central repository for skills and automation scripts for the LinguoFlow ecosystem.
 
-## 📂 Struktura Repozytorium
+## 📂 Repository Structure
 
-- **`/skills`**: Gotowe definicje skilli (pliki `SKILL.md` + dedykowane skrypty).
-  - `exam-management`: Zarządzanie egzaminami, synchronizacja z API, walidacja.
-- **`/shared`**: Współdzielona logika, narzędzia i schematy JSON.
-- **`/templates`**: Szablony ułatwiające tworzenie nowych narzędzi.
+- **`/skills`**: Ready-to-use skill definitions (`SKILL.md` files + dedicated scripts).
+  - `exam-management`: Exam management, API synchronization, validation.
+- **`/shared`**: Shared logic, tools, and JSON schemas.
+- **`/templates`**: Templates to facilitate the creation of new tools.
 
-## 🛠️ Jak korzystać ze skilli?
+## 🛠️ How to use skills?
 
-Aby użyć skilla w konkretnym projekcie, zaleca się utworzenie symlinka:
+To use a skill in a specific project, it is recommended to create a symbolic link:
 
 ```bash
 mkdir -p .gemini/skills
 ln -s ~/projects/LinguoFlow-skills/skills/exam-management .gemini/skills/exam-management
 ```
 
-## 📜 Lista Skilli
+## 📜 Skill List
 
-| Skill | Opis | Status |
+| Skill | Description | Status |
 | :--- | :--- | :--- |
-| **exam-management** | Pełna obsługa cyklu życia egzaminu (v0.4) | Gotowy |
-| **content-generator** | AI Prompty do generowania zadań | Planowany |
+| **exam-management** | Full lifecycle support for exams (v0.4) | Ready |
+| **content-generator** | AI Prompts for task generation | Planned |
 
 ---
 *Created and managed by Gemini CLI.*
