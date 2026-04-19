@@ -15,7 +15,7 @@ Aby użyć skilla w konkretnym projekcie, zaleca się utworzenie symlinka:
 
 ```bash
 mkdir -p .gemini/skills
-ln -s ~/projects/LingouFlow-exams/skills/exam-management .gemini/skills/exam-management
+ln -s ~/projects/LinguoFlow-skills/skills/exam-management .gemini/skills/exam-management
 ```
 
 ## 📜 Lista Skilli
